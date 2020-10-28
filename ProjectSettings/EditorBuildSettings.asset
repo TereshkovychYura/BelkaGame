@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 647f11522f72550438fd906c28cc2aad
+  - enabled: 1
+    path: Assets/Scenes/JumpScene.unity
+    guid: e940b09caecf36c479b2e4cc308fd0c4
   m_configObjects: {}

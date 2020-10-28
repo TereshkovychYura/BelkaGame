@@ -17,6 +17,11 @@ public class MainCamera : MonoBehaviour
         
     }
 
+    public void OnClickRunJumpGame()
+    {
+        SceneManager.LoadScene("JumpScene");
+    }
+
     public void OnClickGoGame()
     {
         SceneManager.LoadScene("GameScene");
