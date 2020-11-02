@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JumpScene.unity
     guid: e940b09caecf36c479b2e4cc308fd0c4
+  - enabled: 1
+    path: Assets/Scenes/YuraBombaScene.unity
+    guid: 6665f4192a34c584aa89654b7cfa40a6
   m_configObjects: {}
