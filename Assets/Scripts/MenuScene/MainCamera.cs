@@ -24,7 +24,7 @@ public class MainCamera : MonoBehaviour
 
     public void OnClickGoGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("YuraScene");
     }
 
     public void OnClickExitGame()
