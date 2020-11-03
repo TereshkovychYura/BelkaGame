@@ -77,24 +77,24 @@ public class PlayerScript : MonoBehaviour
 		if (m_Grounded || m_AirControl)
 		{
 
-			// If crouching
-			if (crouch)
-			{
-				if (!m_wasCrouching)
-				{
-					m_wasCrouching = true;
-					OnCrouchEvent.Invoke(true);
-				}
+			//// If crouching
+			//if (crouch)
+			//{
+			//	if (!m_wasCrouching)
+			//	{
+			//		m_wasCrouching = true;
+			//		OnCrouchEvent.Invoke(true);
+			//	}
 
-				// Reduce the speed by the crouchSpeed multiplier
-				move *= m_CrouchSpeed;
+			//	// Reduce the speed by the crouchSpeed multiplier
+			//	move *= m_CrouchSpeed;
 
-				// Disable one of the colliders when crouching
-				if (m_CrouchDisableCollider != null)
-					m_CrouchDisableCollider.enabled = false;
-			}
-			else
-			{
+			//	// Disable one of the colliders when crouching
+			//	if (m_CrouchDisableCollider != null)
+			//		m_CrouchDisableCollider.enabled = false;
+			//}
+			//else
+			//{
 				// Enable the collider when not crouching
 				if (m_CrouchDisableCollider != null)
 					m_CrouchDisableCollider.enabled = true;
@@ -104,7 +104,7 @@ public class PlayerScript : MonoBehaviour
 					m_wasCrouching = false;
 					OnCrouchEvent.Invoke(false);
 				}
-			}
+			//}
 
 			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
